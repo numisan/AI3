@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <title>おすすめ</title>
+</head>
+<body>
+    <h2 style="color:green;">オススメ映画トップ5</h2>
+
+    <ol>
+        {% for movie in recommendations %}
+            <li>{{ movie }}</li>
+        {% endfor %}
+    </ol>
+
+    <form action="/" method="get">
+        <button type="submit">選び直す</button>
+    </form>
+</body>
+</html>
